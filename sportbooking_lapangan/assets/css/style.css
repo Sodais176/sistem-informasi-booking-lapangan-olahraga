@@ -233,11 +233,6 @@ canvas{
     height: 100vh;
 }
 
-.container{
-    display:flex;
-    height:100vh;
-}
-
 .cover{
     width:45%;
     background:#001f4d;
@@ -269,7 +264,8 @@ canvas{
 }
 
 form{
-    width:400px;
+    width:100%;
+    max-width: 400px;
 }
 
 input{
@@ -288,4 +284,44 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
+}
+
+.fasilitas-group{
+    margin:15px 0;
+}
+
+.fasilitas-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.fasilitas-item input[type="checkbox"]{
+    width:auto;
+    margin:0;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:15px 0;
+}
+
+.options .remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.options input[type="checkbox"]{
+    width:auto;
+    margin:0;
+}
+
+.options a{
+    text-decoration:none;
+    color:#0066ff;
+    font-size:14px;
 }
