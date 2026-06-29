@@ -1,0 +1,229 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header{
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero{
+    text-align: center;
+    padding: 40px;
+}
+
+.sports{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.register-link{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+.forgot-link{
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forgot-link a{
+    color: red;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link a:hover{
+    text-decoration: underline;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+th, td{
+    padding: 12px;
+    text-align: center;
+}
+
+th{
+    background: #222;
+    color: white;
+}
+
+tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+.dashboard-section{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+canvas{
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    display: block;
+}
+
+.hero-buttons{
+    margin-top: 20px;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.stat-box{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search-section{
+    text-align: center;
+    margin: 30px;
+}
+
+.promo{
+    background: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial{
+    padding: 20px;
+}
+
+.shortcut{
+    text-align: center;
+    margin: 20px;
+}
+
+.testimonial form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial input,
+.testimonial textarea,
+.testimonial select{
+    padding: 10px;
+    width: 100%;
+}
+
+.testimonial button{
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+#testimonialList{
+    margin-top: 20px;
+}
+
+#testimonialList .card{
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.kepuasan-box{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.progress{
+    width: 80%;
+    height: 25px;
+    background: #ddd;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#kepuasanBar{
+    height: 100%;
+    width: 0%;
+    background: green;
+    transition: 0.5s;
+}
+
+#kepuasanPersen{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial-card button{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    cursor:pointer;
+}
