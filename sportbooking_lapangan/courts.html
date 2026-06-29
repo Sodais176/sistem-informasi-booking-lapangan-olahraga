@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Lapangan - Sport Booking</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <h1>DAFTAR LAPANGAN OLAHRAGA</h1>
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="courts.html">Lapangan</a>
+            <a href="booking.html">Booking</a>
+            <a href="payment.html">Payment</a>
+            <a href="report.php">Laporan</a>
+            <a href="dashboard.html">Grafik Transaksi</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="filter">
+        <h2>Pilih Jenis Olahraga</h2>
+
+        <select id="filterSport">
+            <option value="all">Semua</option>
+            <option value="padel">Padel</option>
+            <option value="futsal">Futsal</option>
+            <option value="badminton">Badminton</option>
+        </select>
+    </section>
+
+    <section class="sports">
+
+        <!-- FUTSAL -->
+         <div class="card" data-sport="futsal">
+            <img src="assets/images/futsal.jpeg" alt="Futsal">
+
+            <h3>Lapangan Futsal A</h3>
+
+            <p>Jenis: Futsal</p>
+            <p>Harga: Rp. 150.000 / jam</p>
+            <p>
+                Lapangan futsal indoor dengan rumput sintesis
+                dan pencahayaan premium.
+            </p>
+
+            <video controls width="100%">
+                <source src="assets/videos/futsal.mp4" type="video/mp4">
+            </video>
+
+            <a href="booking.html">
+                <button>Booking Sekarang</button>
+            </a>
+         </div>
+        
+        <!-- PADEL -->
+         <div class="card" data-sport="padel">
+            <img src="assets/images/padel.jpeg" alt="Padel">
+
+            <h3>Lapangan Padel A</h3>
+
+            <p>Jenis: Padel</p>
+            <p>Harga: Rp 120.000 / jam</p>
+            <p>
+                Lapangan padel modern dengan fasilitas lengkap
+                dan area tunggu nyaman.
+            </p>
+
+            <video controls width="100%">
+                <source src="assets/videos/padel.mp4" type="video/mp4">
+            </video>
+
+            <a href="booking.html">
+                <button>Booking Sekarang</button>
+            </a>
+         </div>
+        
+         <!-- BADMINTON -->
+          <div class="card" data-sport="badminton">
+            <img src="assets/images/badminton.jpg" alt="Badminton">
+
+            <h3>Lapangan Badminton A</h3>
+
+            <p>Jenis: Badminton</p>
+            <p>Harga: Rp 50.000 / jam</p>
+            <p>
+                Lapangan badminton indoor dengan lantai kayu
+                berkualitas dan ventilasi baik.
+            </p>
+
+            <video controls width="100%">
+                <source src="assets/videos/badminton.mp4" alt="Badminton">
+            </video>
+
+            <a href="booking.html">
+                <button>Booking Sekarang</button>
+            </a>
+          </div>
+    </section>
+
+    <footer>
+        <p>@2026 Sport Booking System</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

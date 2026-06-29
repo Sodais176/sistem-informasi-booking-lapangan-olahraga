@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Sport Booking</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <h1>PEMBAYARAN BOOKING</h1>
+
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="courts.html">Lapangan</a>
+            <a href="booking.html">Booking</a>
+            <a href="payment.html">Payment</a>
+            <a href="report.php">Laporan</a>
+            <a href="dashboard.html">Grafik Transaksi</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="payment-section">
+
+        <form id="paymentForm" action="payment_data.php" method="POST" enctype="multipart/form-data">
+
+            <h2>Upload Pembayaran</h2>
+
+            <!-- Nama -->
+             <label>Nama Lengkap</label>
+             <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+             <br><br>
+            
+            <!-- Booking ID -->
+             <label>ID Booking</label>
+             <input type="number" name="booking_id" placeholder="Masukkan ID Booking" required>
+
+             <br><br>
+            
+            <!-- Metode pembayaran -->
+             <label>Metode Pembayaran</label>
+             <select name="payment_method" required>
+                <option value="">Pilih metode pembayaran</option>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="E-Wallet">E-Wallet</option>
+                <option value="QRIS">QRIS</option>
+             </select>
+
+             <br><br>
+            
+            <!-- Nominal -->
+             <label>Nominal Pembayaran</label>
+             <input type="number" name="nominal" placeholder="Masukkan nominal" required>
+
+             <br><br>
+
+            <!-- Upload bukti transfer -->
+             <label>Bukti Transfer</label>
+             <input type="file" name="bukti_transfer" id="paymentProof" accept="image/*" required>
+
+             <br><br>
+
+            <!-- Preview gambar -->
+             <img id="preview" width="200" style="display: none; margin-top: 10px;">
+
+             <br><br>
+
+            <!-- Catatan -->
+             <label>Catatan Tambahan</label>
+             <textarea name="catatan" placeholder="Tambahkan catatan (opsional)"></textarea>
+
+             <br><br>
+
+            <!-- Tombol submit -->
+             <button type="submit" name="submit">Upload Pembayaran</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>@ 2026 Sport Booking System</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

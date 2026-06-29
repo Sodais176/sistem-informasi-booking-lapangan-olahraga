@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sport Booking</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>DASHBOARD SPORT BOOKING</h1>
+
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="courts.html">Lapangan</a>
+        <a href="booking.html">Booking</a>
+        <a href="payment.html">Payment</a>
+        <a href="report.php">Laporan</a>
+        <a href="dashboard.html">Grafik Transaksi</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="dashboard-section">
+
+    <h2>Grafik Booking per Olahraga</h2>
+    <canvas id="bookingChart"></canvas>
+
+    <h2>Grafik Status Pembayaran</h2>
+    <canvas id="paymentChart"></canvas>
+
+</section>
+
+<footer>
+    <p>© 2026 Sport Booking System</p>
+</footer>
+
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
